@@ -1,0 +1,190 @@
+@import url('./../variables.css');
+
+.task__page {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      padding: 0 2vw;
+}
+.task__page__left {
+      width: 100%;
+      padding: 0 3vw;
+      overflow-y: auto;
+      padding-bottom: 15vh;
+}
+.task__page__left__top {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 3vh 0;
+      gap: 4px;
+}
+.task__page__left__top {
+      
+}
+.task__page__left__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 2vh;
+}
+.task__page__left__header__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.task__page__left__header__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.task__page__left__header__buttons a {
+      cursor: pointer;
+      border: 1.4px solid rgb(20,20,20,.1);
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 32px;
+      background-color: transparent;
+      border-radius: 0  100% 100% 0;
+      transition: all .3s linear;
+}
+.task__page__left__header__buttons a:hover {
+}
+.task__page__left__header__buttons a svg {
+      opacity: .4;
+}
+.task__page__left__header__buttons a:first-child {
+      rotate: 180deg;
+
+}
+.task__page__left__header__buttons a:last-child  {
+      background-color: var(--pink);
+      border-color: var(--pink);
+}
+.task__page__left__header__buttons a:last-child  svg {
+      opacity: 1;
+}
+.task__page__left__top span {
+      color: #ADADB2;
+}
+.task__page__left__content img {
+      width: 100% !important;
+      height: auto !important;
+}
+.task__page__left__content {
+      text-align: justify;
+}
+.task__page__left__content__video {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+}
+.task__page__left__content p {
+      margin-bottom: 10px;
+}
+.task__page__left__content ol {
+      margin-top: 6px;
+}
+.task__page__left__content li {
+      margin-left: 20px;
+      margin-bottom: 10px;
+}
+.task__page__right {
+      width: 100%;
+      padding: 2vw 0 2vw 2vw;
+      border-left: 1.5px solid rgb(20,20,20,.1);
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      overflow-y: auto;
+}
+.task__page__right h3 {
+      margin-bottom: 10px;
+}
+
+.task__page__right__context {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+}
+.tasks__title {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      overflow-x: hidden;
+      margin-bottom: 8px;
+}
+.tasks__title__header {
+      margin-bottom: 4px;
+}
+.tasks__title__header h4 {
+      font-size: 16px;
+}
+.task {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 6px;
+      padding: 4px;
+      border-radius: 10px;
+      transition: all .3s linear;
+      margin-left: 6px;
+      overflow-x: hidden;
+  }
+.task__left {
+      width: 85%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 4%;
+}
+.task__done {
+      display: block;
+      content: '';
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      border: 2px solid rgb(20, 20, 20, .6);
+      transition: all .3s linear;
+      position: relative;
+}
+.task__left i {
+      opacity: .6;
+}
+.task__left a {
+      color: rgb(20, 20, 20, .6);
+      font-weight: 500;
+      font-size: 16px;
+}   
+.task__right {
+      width: 10%;
+}
+.task__right a {
+      width: 26px;
+      height: 26px;
+      padding: 6px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+}
+.task__right a svg {
+      opacity: .5;
+}
+.task:hover .task__left a {
+      color: rgb(20, 20, 20, .9);
+}
+.task:hover .task__right a svg {
+      opacity: .9;
+}
